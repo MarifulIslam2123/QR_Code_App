@@ -7,7 +7,7 @@ function getQrData(UserData,width,height){
     fetch(`https://api.qrserver.com/v1/create-qr-code/?size=${width}x${height}&data=${UserData}`)
     .then((data) => document.getElementById("qrImage").src = data.url);
 
-    //document.getElementById("qrImage").src = data.url;
+    
 }
 
 
